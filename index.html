@@ -1,157 +1,182 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ruang Tugas Kita | Teman Belajar dan Pendampingan Akademik</title>
-  <meta name="description" content="Ruang Tugas Kita menyediakan pendampingan belajar, konsultasi tugas, desain presentasi, proofreading, dan bantuan format penulisan akademik.">
-  <meta name="theme-color" content="#fff1f7">
-  <meta property="og:title" content="Ruang Tugas Kita">
-  <meta property="og:description" content="Teman belajar dan pendampingan akademikmu.">
-  <style>
-    :root{--pink:#d96f9f;--deep:#873b62;--soft:#fff1f7;--pale:#fff9fc;--ink:#513747;--muted:#806878;--line:#f2d6e3}
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{margin:0;background:var(--pale);color:var(--ink);font-family:ui-rounded,"Segoe UI",system-ui,-apple-system,sans-serif;line-height:1.6}
-    a{color:inherit}
-    .wrap{width:min(1080px,92%);margin:auto}
-    header{position:sticky;top:0;z-index:5;background:#fff9fcdf;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-    nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
-    .brand{font-weight:850;color:var(--deep);font-size:1.12rem;text-decoration:none}
-    .navlinks{display:flex;gap:20px;align-items:center;font-size:.92rem}
-    .navlinks a{text-decoration:none;color:var(--muted)}
-    .btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;background:var(--pink);color:white;text-decoration:none;font-weight:750;padding:12px 19px;border-radius:999px;box-shadow:0 8px 20px #d96f9f35}
-    .btn:hover{filter:brightness(.96);transform:translateY(-1px)}
-    .hero{padding:76px 0 58px;background:radial-gradient(circle at 85% 12%,#ffe0ed 0,transparent 28%),linear-gradient(135deg,#fff1f7,#fff9fc 65%)}
-    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:38px;align-items:center}
-    .eyebrow{display:inline-block;background:#ffe1ed;color:var(--deep);padding:6px 12px;border-radius:999px;font-size:.82rem;font-weight:750}
-    h1{font-size:clamp(2.35rem,5vw,4.25rem);line-height:1.08;letter-spacing:-.045em;color:var(--deep);margin:17px 0}
-    .lead{font-size:1.08rem;color:var(--muted);max-width:610px}
-    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
-    .btn.secondary{background:white;color:var(--deep);border:1px solid var(--line);box-shadow:none}
-    .visual{background:white;border:1px solid var(--line);border-radius:30px;padding:24px;box-shadow:0 20px 55px #a64f7820;transform:rotate(1deg)}
-    .visual-top{display:flex;justify-content:space-between;align-items:center;color:var(--deep);font-weight:800}
-    .sparkle{font-size:2rem}
-    .note{background:var(--soft);border-radius:18px;padding:18px;margin-top:17px}
-    .note strong{color:var(--deep)}
-    .note p{margin:5px 0 0;color:var(--muted);font-size:.93rem}
-    section{padding:65px 0}
-    .section-head{text-align:center;max-width:650px;margin:0 auto 30px}
-    h2{font-size:clamp(1.8rem,3vw,2.5rem);line-height:1.15;color:var(--deep);margin:0 0 10px}
-    .section-head p,.muted{color:var(--muted)}
-    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .card{background:white;border:1px solid var(--line);border-radius:22px;padding:23px;box-shadow:0 8px 28px #a64f780b}
-    .ico{width:45px;height:45px;display:grid;place-items:center;background:var(--soft);border-radius:14px;font-size:1.35rem}
-    .card h3{color:var(--deep);margin:13px 0 5px}
-    .card p{margin:0;color:var(--muted);font-size:.95rem}
-    .how{background:var(--soft)}
-    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .step{background:#fff;border-radius:20px;padding:22px;border:1px solid var(--line)}
-    .num{font-size:.8rem;font-weight:850;color:var(--pink);letter-spacing:.08em}
-    .price{background:white;border:1px solid var(--line);border-radius:24px;padding:28px;text-align:center;max-width:700px;margin:auto}
-    .price strong{font-size:2rem;color:var(--deep)}
-    .contact{background:linear-gradient(135deg,#f9dce9,#fff1f7);text-align:center}
-    .contact p{color:var(--muted);max-width:600px;margin:10px auto 22px}
-    footer{padding:25px 0;text-align:center;color:var(--muted);font-size:.88rem}
-    .fine{font-size:.83rem;color:var(--muted)}
-    @media(max-width:760px){.hero-grid{grid-template-columns:1fr}.visual{max-width:480px}.cards{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:1fr}.navlinks a:not(.btn){display:none}}
-    @media(max-width:480px){.cards{grid-template-columns:1fr}.hero{padding:54px 0 42px}.navlinks .btn{padding:9px 13px;font-size:.85rem}}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Ruang Tugas Kita | Bantuan Tugas Kuliah dan Pendampingan Akademik</title>
+<meta name="description" content="Ruang Tugas Kita menyediakan konsultasi tugas kuliah, bimbingan belajar mahasiswa, pendampingan makalah, review jurnal, desain PowerPoint, dan proofreading.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Ruang Tugas Kita">
+<meta name="theme-color" content="#fff1f7">
+
+<link rel="canonical" href="https://ruangtugaskitaa.github.io/Joki-tugas-di-ruang-tugas-kitaa-/">
+
+<meta property="og:title" content="Ruang Tugas Kita | Bantuan Akademik Mahasiswa">
+<meta property="og:description" content="Teman belajar dan pendampingan akademik mahasiswa.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ruangtugaskitaa.github.io/Joki-tugas-di-ruang-tugas-kitaa-/">
+
+<!-- Masukkan kode verifikasi Google Search Console di sini -->
+
+<style>
+:root{--pink:#d96f9f;--deep:#873b62;--soft:#fff1f7;--pale:#fff9fc;--ink:#513747;--muted:#806878;--line:#f2d6e3}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--pale);color:var(--ink);font-family:"Segoe UI",system-ui,sans-serif;line-height:1.7}
+.wrap{width:min(1080px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#fff9fcf2;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:15px}
+.brand{color:var(--deep);font-size:1.15rem;font-weight:850;text-decoration:none}
+.navlinks{display:flex;gap:20px;align-items:center}
+.navlinks a{text-decoration:none;color:var(--muted)}
+.btn{display:inline-block;background:var(--pink);color:white!important;text-decoration:none;font-weight:750;padding:12px 20px;border-radius:30px;transition:.2s}
+.btn:hover{transform:translateY(-2px)}
+.secondary{background:white;color:var(--deep)!important;border:1px solid var(--line)}
+.hero{padding:75px 0 60px;background:radial-gradient(circle at 85% 12%,#ffe0ed 0,transparent 28%),linear-gradient(135deg,#fff1f7,#fff9fc 65%)}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:38px;align-items:center}
+.eyebrow{display:inline-block;background:#ffe1ed;color:var(--deep);padding:6px 13px;border-radius:30px;font-size:.84rem;font-weight:750}
+h1{font-size:clamp(2.2rem,5vw,4rem);line-height:1.12;color:var(--deep);margin:18px 0}
+.lead{font-size:1.08rem;color:var(--muted)}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+.visual{background:white;border:1px solid var(--line);border-radius:28px;padding:25px;box-shadow:0 20px 50px #a64f7820}
+.visual-top{display:flex;justify-content:space-between;color:var(--deep);font-weight:800}
+.note{background:var(--soft);border-radius:17px;padding:17px;margin-top:16px}
+.note strong{color:var(--deep)}
+.note p{color:var(--muted);margin:5px 0 0}
+section{padding:65px 0}
+.section-head{text-align:center;max-width:680px;margin:0 auto 35px}
+h2{font-size:clamp(1.8rem,3vw,2.5rem);color:var(--deep);line-height:1.2}
+.section-head p,.muted{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.card{background:white;border:1px solid var(--line);border-radius:22px;padding:23px;box-shadow:0 8px 25px #a64f780b}
+.ico{width:46px;height:46px;display:grid;place-items:center;background:var(--soft);border-radius:14px;font-size:1.4rem}
+.card h3{color:var(--deep);margin:13px 0 6px}
+.card p{color:var(--muted);margin:0;font-size:.95rem}
+.how{background:var(--soft)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.step{background:white;padding:23px;border:1px solid var(--line);border-radius:20px}
+.num{color:var(--pink);font-weight:850;font-size:.85rem}
+.price{max-width:700px;margin:auto;background:white;border:1px solid var(--line);border-radius:25px;padding:30px;text-align:center}
+.price strong{display:block;color:var(--deep);font-size:2.4rem;margin:10px}
+.contact{background:linear-gradient(135deg,#f9dce9,#fff1f7);text-align:center}
+.contact p{color:var(--muted);max-width:620px;margin:12px auto 24px}
+footer{padding:28px 0;text-align:center;color:var(--muted);font-size:.9rem}
+.fine{font-size:.83rem}
+@media(max-width:760px){.hero-grid{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:1fr}.navlinks a:not(.btn){display:none}}
+@media(max-width:480px){.cards{grid-template-columns:1fr}.hero{padding:50px 0 40px}}
+</style>
 </head>
+
 <body>
 <header>
-  <div class="wrap">
-    <nav>
-      <a class="brand" href="#">🎀 Ruang Tugas Kita</a>
-      <div class="navlinks">
-        <a href="#layanan">Layanan</a><a href="#cara">Cara kerja</a><a href="#kontak" class="btn">Konsultasi</a>
-      </div>
-    </nav>
-  </div>
+<div class="wrap">
+<nav>
+<a class="brand" href="#">🎀 Ruang Tugas Kita</a>
+<div class="navlinks">
+<a href="#layanan">Layanan</a>
+<a href="#cara">Cara Kerja</a>
+<a href="#kontak" class="btn">Konsultasi</a>
+</div>
+</nav>
+</div>
 </header>
 
 <main>
-  <section class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <span class="eyebrow">📚 Teman belajar dan pendampingan akademik</span>
-        <h1>Belajar lebih terarah, tugas lebih terencana.</h1>
-        <p class="lead">Punya tugas dan belum tahu harus mulai dari mana? Ruang Tugas Kita membantu kamu memahami materi, merencanakan pengerjaan, dan menyajikan ide dengan lebih rapi.</p>
-        <div class="hero-actions">
-          <a class="btn" href="#kontak">💬 Konsultasi layanan</a>
-          <a class="btn secondary" href="#layanan">Lihat layanan</a>
-        </div>
-      </div>
-      <div class="visual" aria-label="Ilustrasi catatan belajar">
-        <div class="visual-top"><span>Study corner ✿</span><span class="sparkle">🌷</span></div>
-        <div class="note"><strong>✏️ Pahami materi</strong><p>Diskusi konsep dan latihan langkah demi langkah.</p></div>
-        <div class="note"><strong>🗂️ Rapikan ide</strong><p>Susun kerangka, referensi, dan presentasi.</p></div>
-        <div class="note"><strong>💗 Belajar dengan percaya diri</strong><p>Proses yang jelas, hasil yang tetap kamu pahami.</p></div>
-      </div>
-    </div>
-  </section>
+<section class="hero">
+<div class="wrap hero-grid">
+<div>
+<span class="eyebrow">📚 Teman Belajar Mahasiswa</span>
+<h1>Bantuan Tugas Kuliah dan Pendampingan Akademik Mahasiswa</h1>
+<p class="lead">Kesulitan memahami materi perkuliahan? Ruang Tugas Kita hadir untuk membantu mahasiswa memahami materi, berdiskusi, menyusun ide, dan memenuhi kebutuhan akademik dengan lebih terarah.</p>
+<div class="hero-actions">
+<a class="btn" href="#kontak">💬 Konsultasi Sekarang</a>
+<a class="btn secondary" href="#layanan">Lihat Layanan</a>
+</div>
+</div>
+<div class="visual">
+<div class="visual-top"><span>Study Corner ✿</span><span>🌷</span></div>
+<div class="note"><strong>✏️ Bimbingan Tugas</strong><p>Diskusi materi dan latihan penyelesaian soal.</p></div>
+<div class="note"><strong>🗂️ Pendampingan Akademik</strong><p>Menyusun kerangka dan mengembangkan ide.</p></div>
+<div class="note"><strong>💗 Belajar Lebih Terarah</strong><p>Memahami proses dan meningkatkan kemampuan belajar.</p></div>
+</div>
+</div>
+</section>
 
-  <section id="layanan">
-    <div class="wrap">
-      <div class="section-head">
-        <h2>Layanan akademik</h2>
-        <p>Pilih pendampingan sesuai kebutuhanmu. Setiap layanan berfokus pada proses belajar dan hasil karya yang kamu pahami.</p>
-      </div>
-      <div class="cards">
-        <article class="card"><div class="ico">📝</div><h3>Bimbingan tugas</h3><p>Diskusi soal, penjelasan materi, dan arahan langkah penyelesaian.</p></article>
-        <article class="card"><div class="ico">📄</div><h3>Makalah & proposal</h3><p>Pendampingan menentukan topik, membuat kerangka, dan menata struktur tulisan.</p></article>
-        <article class="card"><div class="ico">📊</div><h3>Desain PowerPoint</h3><p>Membantu menyusun tampilan presentasi yang rapi, jelas, dan menarik.</p></article>
-        <article class="card"><div class="ico">📚</div><h3>Resume & rangkuman</h3><p>Membantu merangkum materi agar lebih mudah dipelajari kembali.</p></article>
-        <article class="card"><div class="ico">🔎</div><h3>Review jurnal & buku</h3><p>Pendampingan membaca, memahami, dan menyusun ulasan kritis.</p></article>
-        <article class="card"><div class="ico">✍️</div><h3>Proofreading & format</h3><p>Pemeriksaan bahasa, konsistensi sitasi, dan penyesuaian format dokumen.</p></article>
-      </div>
-    </div>
-  </section>
+<section id="layanan">
+<div class="wrap">
+<div class="section-head">
+<h2>Layanan Ruang Tugas Kita</h2>
+<p>Berbagai layanan bantuan belajar dan pendampingan akademik untuk kebutuhan mahasiswa.</p>
+</div>
+<div class="cards">
+<article class="card"><div class="ico">📝</div><h3>Bimbingan Tugas Kuliah</h3><p>Diskusi soal, penjelasan materi, dan arahan langkah penyelesaian.</p></article>
+<article class="card"><div class="ico">📄</div><h3>Makalah dan Proposal</h3><p>Pendampingan menentukan topik, menyusun kerangka, dan memahami struktur tulisan.</p></article>
+<article class="card"><div class="ico">📊</div><h3>Desain PowerPoint</h3><p>Membantu menyusun tampilan presentasi yang rapi dan menarik.</p></article>
+<article class="card"><div class="ico">📚</div><h3>Resume dan Rangkuman</h3><p>Membantu merangkum materi agar lebih mudah dipahami dan dipelajari.</p></article>
+<article class="card"><div class="ico">🔎</div><h3>Review Jurnal dan Buku</h3><p>Pendampingan membaca, memahami, dan menyusun ulasan kritis.</p></article>
+<article class="card"><div class="ico">✍️</div><h3>Proofreading dan Format</h3><p>Pemeriksaan bahasa, konsistensi penulisan, dan format dokumen akademik.</p></article>
+</div>
+</div>
+</section>
 
-  <section class="how" id="cara">
-    <div class="wrap">
-      <div class="section-head">
-        <h2>Gampang memulainya</h2>
-        <p>Konsultasikan kebutuhanmu terlebih dahulu sebelum memilih layanan.</p>
-      </div>
-      <div class="steps">
-        <div class="step"><div class="num">LANGKAH 01</div><h3>Ceritakan kebutuhan</h3><p class="muted">Jelaskan mata pelajaran, jenis tugas, instruksi, dan tenggat waktunya.</p></div>
-        <div class="step"><div class="num">LANGKAH 02</div><h3>Diskusikan layanan</h3><p class="muted">Kami jelaskan bentuk pendampingan, estimasi waktu, dan biaya sebelum disepakati.</p></div>
-        <div class="step"><div class="num">LANGKAH 03</div><h3>Mulai belajar</h3><p class="muted">Kamu mengikuti prosesnya dan memahami materi atau dokumen yang dikerjakan.</p></div>
-      </div>
-    </div>
-  </section>
+<section class="how" id="cara">
+<div class="wrap">
+<div class="section-head">
+<h2>Bagaimana Cara Kerjanya?</h2>
+<p>Proses konsultasi sederhana dan transparan.</p>
+</div>
+<div class="steps">
+<div class="step"><div class="num">LANGKAH 01</div><h3>Ceritakan Kebutuhan</h3><p class="muted">Jelaskan materi, jenis tugas, instruksi, dan kebutuhanmu.</p></div>
+<div class="step"><div class="num">LANGKAH 02</div><h3>Diskusikan Layanan</h3><p class="muted">Tentukan bentuk pendampingan, estimasi waktu, dan biaya.</p></div>
+<div class="step"><div class="num">LANGKAH 03</div><h3>Mulai Belajar</h3><p class="muted">Ikuti prosesnya dan pahami materi atau dokumen yang dibahas.</p></div>
+</div>
+</div>
+</section>
 
-  <section id="harga">
-    <div class="wrap">
-      <div class="price">
-        <span class="eyebrow">Harga bersahabat</span>
-        <h2 style="margin-top:14px">Mulai dari</h2>
-        <strong>Rp5.000</strong>
-        <p class="muted">Biaya akhir menyesuaikan jenis layanan, tingkat kesulitan, dan waktu pengerjaan. Tanyakan estimasi terlebih dahulu—tidak ada biaya tanpa persetujuan.</p>
-      </div>
-    </div>
-  </section>
+<section id="harga">
+<div class="wrap">
+<div class="price">
+<span class="eyebrow">Harga Bersahabat</span>
+<h2>Mulai dari</h2>
+<strong>Rp5.000</strong>
+<p class="muted">Biaya menyesuaikan jenis layanan, tingkat kesulitan, dan waktu pengerjaan. Tanyakan estimasi terlebih dahulu. Tidak ada biaya tanpa persetujuan.</p>
+</div>
+</div>
+</section>
 
-  <section class="contact" id="kontak">
-    <div class="wrap">
-      <span class="eyebrow">💌 Kami siap berdiskusi</span>
-      <h2 style="margin-top:14px">Ada yang ingin kamu konsultasikan?</h2>
-      <p>Kirim pesan untuk menanyakan ketersediaan layanan dan estimasi biaya. Jangan kirim kata sandi, data pribadi sensitif, atau informasi akun sekolah/kampus.</p>
-      <a class="btn" href="https://wa.me/6283838038456?text=Halo%20Ruang%20Tugas%20Kita%2C%20saya%20ingin%20konsultasi%20layanan%20akademik." target="_blank" rel="noopener">💚 Chat WhatsApp</a>
-      <p class="fine">WhatsApp: 0838-3803-8456</p>
-    </div>
-  </section>
+<section id="tentang">
+<div class="wrap">
+<div class="section-head">
+<h2>Tentang Ruang Tugas Kita</h2>
+<p>Ruang Tugas Kita merupakan layanan pendampingan akademik yang membantu mahasiswa belajar lebih terarah melalui konsultasi, diskusi materi, pengembangan ide, dan perapian dokumen. Kami mengutamakan pemahaman dan proses belajar yang bertanggung jawab.</p>
+</div>
+</div>
+</section>
+
+<section class="contact" id="kontak">
+<div class="wrap">
+<span class="eyebrow">💌 Kami Siap Berdiskusi</span>
+<h2>Ada yang Ingin Kamu Konsultasikan?</h2>
+<p>Hubungi Ruang Tugas Kita untuk menanyakan informasi layanan, konsultasi akademik, dan estimasi biaya.</p>
+<a class="btn" href="https://wa.me/6283838038456?text=Halo%20Ruang%20Tugas%20Kita%2C%20saya%20ingin%20konsultasi%20layanan%20akademik." target="_blank" rel="noopener noreferrer">💚 Hubungi WhatsApp</a>
+<p class="fine">WhatsApp: 0838-3803-8456</p>
+</div>
+</section>
 </main>
 
 <footer>
-  <div class="wrap">
-    <strong>🎀 Ruang Tugas Kita</strong>
-    <p>Teman belajar dan pendampingan akademik.</p>
-    <p class="fine">Layanan ini mendukung proses belajar. Kami tidak mengerjakan ujian, plagiarisme, atau tugas untuk diklaim sebagai karya orang lain.</p>
-    <p>© <span id="year"></span> Ruang Tugas Kita.</p>
-  </div>
+<div class="wrap">
+<strong>🎀 Ruang Tugas Kita</strong>
+<p>Teman Belajar dan Pendampingan Akademik Mahasiswa.</p>
+<p class="fine">Kami mendukung proses belajar yang jujur, pemahaman materi, dan pengembangan kemampuan akademik. Kami tidak mengerjakan ujian atau membantu plagiarisme.</p>
+<p>© <span id="year"></span> Ruang Tugas Kita.</p>
+</div>
 </footer>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
